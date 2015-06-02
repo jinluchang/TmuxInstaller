@@ -12,7 +12,7 @@ export HOME=~
 export LANG=en_US.UTF-8
 
 if [ -z "$prefix" ] ; then
-    prefix=~/local
+    prefix=~/local-tmux
 fi
 
 add-to-colon-list () {
