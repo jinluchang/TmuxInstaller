@@ -3,6 +3,6 @@
 . conf.sh
 
 ./scripts/distclean.sh
-./scripts/ncurses.sh
-./scripts/libevent.sh
+./scripts/ncurses.sh || read
+./scripts/libevent.sh || read
 ./scripts/tmux.sh
