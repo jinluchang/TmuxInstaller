@@ -8,7 +8,7 @@ echo "!!!! build $name !!!!"
 rm -rf $src_dir
 mkdir -p $src_dir
 cd $src_dir
-tar xzf $distfiles/$name-*.tar.gz
+rsync -avz --delete $distfiles/$name-* .
 
 cd $name-*
 ./configure \
