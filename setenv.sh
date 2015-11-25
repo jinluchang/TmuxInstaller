@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -z "$prefix" ] ; then
+    prefix=~/local-tmux
+fi
+
 if [ "$(uname -m)" = ppc64 ] ; then
     arch=bgq
 elif [ "$(uname -m)" = x86_64 ] ; then
@@ -10,10 +14,6 @@ fi
 
 export HOME=~
 export LANG=en_US.UTF-8
-
-if [ -z "$prefix" ] ; then
-    prefix=~/local-tmux
-fi
 
 add-to-colon-list () {
     local name="$1"
