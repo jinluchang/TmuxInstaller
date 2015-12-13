@@ -7,3 +7,4 @@
 ./scripts/libevent.sh || read
 ./scripts/tmux.sh
 ./scripts/tpm.sh
+./scripts/setenv.sh
