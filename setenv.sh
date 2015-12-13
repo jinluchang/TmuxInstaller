@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if [ -z "$prefix" ] ; then
     prefix=~/local-tmux
 fi
